@@ -20,20 +20,32 @@ function ContainerCards() {
     useEffect(() => {setPokemonIds((prevIds) => shuffleArray(prevIds))}, []);
 
     const handleCardClick = (id) => {
-        // ADD LOGIC
+        if(prevCard !== id) {
+            setPrevCard(id);
+            setScore((prevScore) => prevScore + 1)
+        } else {
+            if (score > highestScore) {
+                setHighestScore(score);
+            }
+
+            setScore(0);
+            setPrevCard(null);
+        }
+        setPokemonIds((prevIds) => shuffleArray(prevIds))
     };
 
+    // Need to add CSS below
     return (
         <div className="">
             <div className="">
                 <h2 className="">Score: {score}</h2>
             </div>
 
-            {/* LOST LOGIC */}
+            {prevCard !== null && score === 0 && (<div>You lost. Try again!</div>)}
 
             <div className="">
                 {pokemonIds.map((id) => (
-                    <Cards key={id} pokemonId={id} onClick={() => handleCardClick} />
+                    <Cards key={id} pokemonId={id} onClick={() => handleCardClick(id)} />
                 ))}
             </div>
 

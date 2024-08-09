@@ -1,8 +1,49 @@
-# React + Vite
+#Memory Card game  + TAILWIND FRAMEWORK
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+To set up follow the steps (to start new project):
 
-Currently, two official plugins are available:
+Step 1: Clone the Repository
+git clone <repository_url> cd <repository_folder_name>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Step 2: Create a Vite React App
+npm create vite@latest my-first-react-app -- --template react
+
+Step 3: Move the Created App to the Current Directory Using rsync
+rsync -av --progress my-first-react-app/ . --exclude my-first-react-app
+
+Step 4: Remove the Empty Directory
+rm -rf my-first-react-app
+
+Step 5: Install Dependencies
+npm install
+
+Step 6: Start the Development Server
+npm run dev
+
+---------------------------------
+
+Please note this code Styled with Tailwind CSS classes.
+
+1. Install Tailwind CSS and its dependencies via npm: 
+npm install -D tailwindcss postcss autoprefixer
+
+2.  Generate the Tailwind configuration files:
+npx tailwindcss init -p
+
+This will create two files:
+
+tailwind.config.js: The main configuration file for customizing Tailwind.
+postcss.config.js: The PostCSS configuration file.
+
+3. In the tailwind.config.js file, set up the content property to specify the paths to all of your template files:
+
+
+4.  Add Tailwind's Base, Components, and Utilities to Your CSS
+In your src directory, locate the index.css (or create it if it doesn't exist) and add the following lines:
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+5.  Run npm start
+
+

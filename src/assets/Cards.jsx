@@ -11,15 +11,15 @@ function Cards({pokemonId, onClick}) {
 
         fetchData()
     }, [pokemonId])
-
+    
     return (
         <>
             {/* css needs adding to className below */}
-            <div className="" onClick={onClick}>
-                <h1 className="">{poke.name}</h1>
+            <div className="border rounded-lg p-4 mx-auto shadow-md hover:shadow-lg transition duration-300" onClick={onClick}>
+                <h1 className="text-3xl font-bold mb-4">{poke.name}</h1>
 
                 {poke.sprites && poke.sprites.front_shiny ? (
-                    <img src={poke.sprites.front_shiny} alt={poke.name} className="" />
+                    <img src={poke.sprites.front_shiny} alt={poke.name} className="w-40 h-40 mx-auto mb-4" />
                 ) : (
                     <div>No image available</div>
                 )}
