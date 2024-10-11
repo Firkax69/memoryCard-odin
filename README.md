@@ -1,4 +1,24 @@
-#Memory Card game  + TAILWIND FRAMEWORK
+# Memory Card game  + TAILWIND FRAMEWORK
+
+A retro pokemon themed memory game, it features over good few unique pokemon via PokeAPI. You can test your memory on this.
+
+Visit game [here](https://memorygamekovalevskyi.netlify.app/)
+
+## Getting Started
+
+git clone `git@github.com:Firkax69/memoryCard-odin.git`
+
+`cd memoryCard-odin/`
+
+`npm install`
+
+`npm start`
+<br/>
+<br/>
+
+-  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  
+<br/>
+<br/>
 
 To set up follow the steps (to start new project):
 
@@ -21,7 +41,7 @@ $ npm install
 Step 6: Start the Development Server
 $ npm run dev
 
----------------------------------
+-  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  
 
 Please note this code Styled with Tailwind CSS classes.
 
