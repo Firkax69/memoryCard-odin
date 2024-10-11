@@ -2,7 +2,7 @@
 
 A retro pokemon themed memory game, it features over good few unique pokemon via PokeAPI. You can test your memory on this.
 
-Visit game [here](https://memorygamekovalevskyi.netlify.app/)
+ 👉 Visit game [here](https://memorygamekovalevskyi.netlify.app/)
 
 ## Getting Started
 
